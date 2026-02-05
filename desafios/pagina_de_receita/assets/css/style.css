@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+}
+
+:root {
+    --font1: 'Young Serif', serif;
+    --font2: 'Outfit', sans-serif;
+
+    --color1: hsl(332, 51%, 32%);
+    --color2: hsl(14, 45%, 36%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(330, 54%, 90%);
+}
+
+header img {
+    border-radius: .75em;
+}
+
+header h1{
+    font-family: var(--font1);
+    font-weight: normal;
+}
+
+header p {
+    font-family: var(--font2);
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 16px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+main .etapa h2 {
+    font-family: var(--font1);
+    font-weight: normal;
+    padding-left: 22px;
+}
+
+main.etapa ul, ol {
+    font-family: var(--font2);
+    margin-left: 0;
+}
+
+main .etapa li {
+    margin-bottom: 12px;
+    padding-left: 1em;
+}
+
+main.etapa li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+section#preparation-time {
+    font-family: var(--font2);
+    margin-left: 25px;
+}
+
+main #preparation-time h2 {
+    color: var(--color1);
+    font-family: var(--font2);
+    font-weight: bold;
+    padding-left: 22px;
+}
+
+main #preparation-time ul li::marker {
+    color: var(--color1);
+}
+
+main .secao h2 {
+    color: var(--color2);
+}
+
+main .secao li::marker {
+    color: var(--color2);
+}
+
+main #nutrition > p, table {
+    font-family: var(--font2);
+    padding-left: 22px;
+}
+
+main #nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+main #nutrition table td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 16px;
+}
+
+main #nutrition .tipo-nutriente {
+    text-indent: 35px;
+}
+
+main #nutrition table .unidade-medida {
+    color: var(--color2);
+    font-weight: bold;
+}
+
+footer {
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.475);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 0.65em;
+}
+
+footer a {
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color2);
+    text-decoration: underline;
+}

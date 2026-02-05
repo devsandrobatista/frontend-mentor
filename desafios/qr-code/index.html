@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor|QR code component</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+        :root {
+            --slate1: hsl(212, 45%, 89%);
+            --slate2: hsl(216, 15%, 48%);
+            --slate3: hsl(218, 44%, 22%);
+            --font-default: 'Arial', Helvetica, sans-serif;
+            --font-destaque: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--slate1);
+        }
+
+        main, footer{
+            background-color: #fff;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.479);
+            border-radius: 1.5em;
+            width: 88%;
+            max-width: 320px;
+            padding:15px;
+            margin: 3% auto 0;
+
+            font-family: var(--font-destaque);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        main > figure {
+            margin: 0;
+        }
+    
+        main > figure > img {
+            display: block;
+            width: 100%;
+            border-radius: 1em;
+            margin: 0 auto;
+        }
+
+        section {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        section > h1 {
+            width: 250px;
+            margin: 16px auto;
+        }
+
+        section > p {
+            max-width: 250px;
+            margin: auto;
+
+            color: var(--slate2);
+            line-height: 1.3em;
+        }
+
+        footer {
+            font-size: .75em;
+            border-radius: 1em;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        footer a {
+            color: var(--slate2);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--slate3);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <figure>
+            <img src="assets/images/image-qr-code.png" alt="QR code leading to Frontend Mentor">
+
+        </figure>
+        <section>
+            <h1>Improve your front-end skills by building projects</h1>
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </section>
+    </main>
+    <footer>Challenge by <a href="" class="link">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/devsandrobatista" class="link">devsandrobatista</a>.
+    </footer>
+</body>
+</html>
