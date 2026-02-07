@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* ----------------------------- */
+/*           STYLE GUIDE         */
+/* ----------------------------- */
+/* 1. Layouts
+    -Mobile: 375px
+    -Desktop: 1440px
+  */
+
+/* 2. Colors 
+  - White: #ffffff
+  - Slate 300: #d6e2f0
+  - Slate 500: #68778d
+  - Slate 900: #1f3251
+*/
+
+/* 3. Typography
+  - Font Size: 15px
+  - Font Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+  - Font Weights: 400, 700
+*/
+
+/* --------------------------------- */
+
+:root {
+  --white: #ffffff;
+  --slate-300: #d6e2f0;
+  --slate-500: #68778d;
+  --slate-900: #1f3251;
+}
+
+html {
+  font-size: 62.5%;
+
+  user-select: none;
+  -moz-user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--slate-300);
+
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-container {
+  background-color: var(--white);
+  max-width: 375px;
+  width: 90%;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  box-shadow:
+    0px 0px 0px 0.5px rgba(31, 50, 81, 0.356),
+    0px 0px 12px rgba(31, 50, 81, 0.456);
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.section-content {
+  max-width: 100%;
+  text-align: center;
+  padding: 2.4rem 0.5rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.section-content div {
+  flex: 0 1 300px;
+}
+
+.main-title {
+  margin-bottom: 1.6rem;
+
+  font-size: 2.6rem;
+}
+
+.main-description {
+  padding: 0 2.4rem;
+  color: var(--slate-500);
+}
+
+footer {
+  background-color: red;
+  padding: 0.8rem;
+
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+
+  align-self: stretch;
+
+  /* 
+  position: relative;
+  transform: translatey(-36.3px); */
+}
+
+.link:link,
+.link:visited {
+}
+
+/* Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
