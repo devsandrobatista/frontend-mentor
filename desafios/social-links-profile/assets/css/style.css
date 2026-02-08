@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--Grey-900);
+
+  color: var(--White);
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  background-color: var(--Grey-800);
+  max-width: 35rem;
+  width: 95.75%;
+  padding: 3.2rem;
+  border-radius: 1.4rem;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+nav {
+  align-self: stretch;
+}
+
+.card-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.city {
+  color: var(--Green);
+  font-weight: 600;
+}
+
+.bio {
+  margin-bottom: 2.4rem;
+  color: var(--White);
+}
+
+.link-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--Grey-700);
+  padding: 1.2rem 0;
+  border-radius: 0.8rem;
+
+  color: var(--White);
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: background-color 0.4s;
+}
+
+.link:hover,
+.link:active {
+  background-color: var(--Green);
+  color: var(--Grey-900);
+}
+
+.medium-margin-bottom {
+  margin-bottom: 2.4rem;
+}
+
+/* Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 86 / 98 */
+
+/* Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
