@@ -25,18 +25,18 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 #### HTML Code
 
-[![Preview HTML Code](assets/images/preview-html-code.png)](https://github.com/devsandrobatista/frontend-mentor/tree/main/desafios/blog-preview-card/index.html)
+[![Preview HTML Code](assets/images/preview-html-code.png)](https://github.com/devsandrobatista/frontend-mentor/tree/main/desafios/social-links-profile/index.html)
 
 #### CSS Code
 
-[![Preview CSS Code](assets/images/preview-css-code.png)](https://github.com/devsandrobatista/frontend-mentor/tree/main/desafios/blog-preview-card/assets/css/style.css)
+[![Preview CSS Code](assets/images/preview-css-code.png)](https://github.com/devsandrobatista/frontend-mentor/tree/main/desafios/social-links-profile/assets/css/style.css)
 
 **⚠️ Clique na imagem para acessar diretamente o código do projeto.**
 
 ### Links
 
-- Solution URL: [Solution here](https://github.com/devsandrobatista/frontend-mentor/tree/main/desafios/perfil-links-sociais)
-- Live Site URL: [Live Site Here](https://devsandrobatista.github.io/frontend-mentor/desafios/blog-preview-card/index.html)
+- Solution URL: [Solution here](https://github.com/devsandrobatista/frontend-mentor/tree/main/desafios/social-links-profile)
+- Live Site URL: [Live Site Here](https://devsandrobatista.github.io/frontend-mentor/desafios/social-links-profile/index.html)
 
 ## My process
 
