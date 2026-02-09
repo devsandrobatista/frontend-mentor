@@ -1,136 +1,155 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Young Serif';
-    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
-}
-
 :root {
-    --font1: 'Young Serif', serif;
-    --font2: 'Outfit', sans-serif;
+  --white: hsl(0, 0%, 100%);
 
-    --color1: hsl(332, 51%, 32%);
-    --color2: hsl(14, 45%, 36%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(330, 54%, 90%);
+  background-color: var(--stone-100);
+  font-family: "Outfit";
+  font-size: 1.6rem;
 }
 
-header img {
-    border-radius: .75em;
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header h1{
-    font-family: var(--font1);
-    font-weight: normal;
+.card-container {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 37rem; /* seu tamanho base */
+  border-radius: 1.6rem;
 }
 
-header p {
-    font-family: var(--font2);
+.card-img img {
+  width: 100%;
 }
 
-main {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto 16px;
-    max-width: 800px;
-    padding: 20px;
+.false-container {
+  padding: 2.8rem;
 }
 
-main .etapa h2 {
-    font-family: var(--font1);
-    font-weight: normal;
-    padding-left: 22px;
+.description {
+  margin-bottom: 2.4rem;
 }
 
-main.etapa ul, ol {
-    font-family: var(--font2);
-    margin-left: 0;
+.section-time {
+  background-color: var(--rose-50);
+  padding: 1.8rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.6rem;
 }
 
-main .etapa li {
-    margin-bottom: 12px;
-    padding-left: 1em;
+.section-time li::marker {
+  color: var(--rose-800);
 }
 
-main.etapa li:not(:last-child) {
-    margin-bottom: 12px;
+.heading {
+  padding: 1.2rem 0;
+  font-family: "Young Serif";
 }
 
-section#preparation-time {
-    font-family: var(--font2);
-    margin-left: 25px;
+.primary-heading {
+  font-weight: 700;
 }
 
-main #preparation-time h2 {
-    color: var(--color1);
-    font-family: var(--font2);
-    font-weight: bold;
-    padding-left: 22px;
+.secondary-heading {
+  color: var(--brown-800);
+  font-weight: 500;
 }
 
-main #preparation-time ul li::marker {
-    color: var(--color1);
+.tertiary-heading {
+  color: var(--rose-800);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
 }
 
-main .secao h2 {
-    color: var(--color2);
+.section-list {
+  padding-left: 1.8rem;
 }
 
-main .secao li::marker {
-    color: var(--color2);
+.section-list li {
+  padding-left: 0.8rem;
+  list-style-position: outside;
+  line-height: 1.4;
 }
 
-main #nutrition > p, table {
-    font-family: var(--font2);
-    padding-left: 22px;
+.section-list li::marker {
+  color: var(--brown-800);
+  font-weight: 700;
 }
 
-main #nutrition table {
-    border-collapse: collapse;
-    width: 100%;
+.section-list li:not(:last-child) {
+  margin-bottom: 1.2rem;
 }
 
-main #nutrition table td {
-    border-bottom: 1px solid hsl(30, 18%, 87%);
-    padding: 16px;
+p,
+li {
+  color: var(--stone-600);
 }
 
-main #nutrition .tipo-nutriente {
-    text-indent: 35px;
+section:not(:nth-of-type(1)):not(:nth-of-type(4)) {
+  padding-bottom: 1.6rem;
+  border-bottom: 0.1px solid rgba(228, 222, 216, 0.8);
 }
 
-main #nutrition table .unidade-medida {
-    color: var(--color2);
-    font-weight: bold;
+.section-nutrition table {
+  width: 100%;
 }
 
-footer {
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.475);
-    margin: 0 auto;
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-    font-family: var(--font1);
-    font-size: 0.65em;
+.section-nutrition tr {
+  display: block;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(228, 222, 216, 0.8);
 }
 
-footer a {
-    color: rgb(109, 109, 109);
-    text-decoration: none;
+.section-nutrition th {
+  width: 10rem;
+  padding-left: 2.4rem;
+  color: var(--stone-600);
+  font-weight: 500;
+  text-align: left;
 }
 
-footer a:hover {
-    color: var(--color2);
-    text-decoration: underline;
+.section-nutrition td {
+  padding-left: 3.2rem;
+  color: var(--brown-800);
+  font-weight: 700;
 }
+
+@media (min-width: 48rem) {
+  .card-container {
+    max-width: 70rem;
+    padding: 2.4rem;
+  }
+
+  .card-img img {
+    border-radius: 0.8rem;
+  }
+
+  .section-nutrition td {
+    padding-left: 24rem;
+    color: var(--brown-800);
+    font-weight: 700;
+  }
+}
+
+/* Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 86 / 98 */
+
+/* Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
